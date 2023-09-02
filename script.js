@@ -19,7 +19,7 @@ function playPause(){
     }
 }
 
-if(song.play()){
+if(!song.pause()){
     setInterval(() => {
         progress.value = song.currentTime;
     },500);
